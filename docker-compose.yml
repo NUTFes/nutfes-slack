@@ -49,6 +49,12 @@ services:
     environment:
       - vite/.env
 
+  cloudflare:
+    image: 'cloudflare/cloudflared:latest'
+    container_name: "NUTFES-SLACK-CLOUDFLARE"
+    volumes: ['./cloudflare/prod:/home/nonroot/.cloudflared']
+    command: tunnel run
+
   nginx:
     image: nginx
     container_name: my-nginx
