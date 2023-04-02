@@ -1,5 +1,5 @@
 tunnel: 1635a8c1-0a08-4256-b6b3-7cccdfaea400
-credentials-file: /home/nonroot/.cloudflared/1635a8c1-0a08-4256-b6b3-7cccdfaea400.json
+credentials-file: cloudflare/prod/1635a8c1-0a08-4256-b6b3-7cccdfaea400.json
 protocol: http2 # eduroam 対策
 
 ingress:
