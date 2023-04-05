@@ -8,5 +8,5 @@ ingress:
   - hostname: gidaifes-slackbot.nutfes.net
     service: http://nutmeg-slackbot:3000
   - hostname: gidaifes-slack.nutfes.net
-    service: http://vite-view:80
+    service: http://nginx:80
   - service: http_status:404
