@@ -52,7 +52,7 @@ services:
   cloudflare:
     image: 'cloudflare/cloudflared:latest'
     container_name: "NUTFES-SLACK-CLOUDFLARE"
-    volumes: ['./cloudflare/prod:/home/nonroot/.cloudflared']
+    volumes: ['./cloudflare:/home/nonroot/.cloudflared']
     command: tunnel run
 
   nginx:
