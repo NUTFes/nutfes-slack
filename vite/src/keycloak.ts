@@ -20,6 +20,7 @@ const Login = (onAuthenticatedCallback: CallbackOneParam) => {
     })
     .catch((e) => {
       console.dir(e);
+      console.log(initOptions)
       console.log(`keycloak init exception: ${e}`);
     });
 };
